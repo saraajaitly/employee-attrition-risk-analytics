@@ -46,9 +46,10 @@ if uploaded_file is not None:
     st.session_state["df"] = df
 
 elif load_sample:
-    st.session_state["df"] = pd.read_csv(
+    df = pd.read_csv(
         "data/raw/WA_Fn-UseC_-HR-Employee-Attrition.csv"
     )
+    st.session_state["df"] = df
 
 if uploaded_file is not None or load_sample:
     
@@ -78,6 +79,8 @@ if predict:
     with st.spinner("Running prediction model..."):
         results = predict_attrition(df)
         results = add_risk_category(results)
+        st.session_state["results"] = results
+        
     st.success("✅ Predictions generated successfully!")
 
     st.subheader("Prediction Summary")

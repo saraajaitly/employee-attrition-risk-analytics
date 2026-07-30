@@ -12,16 +12,12 @@ st.set_page_config(
 )
 
 
-@st.cache_data
 def load_dashboard_data():
 
-    df = pd.read_csv(
-        "data/raw/WA_Fn-UseC_-HR-Employee-Attrition.csv"
-    )
-
-    results = predict_attrition(df)
-    results = add_risk_category(results)
-
+    results = st.session_state.get("results")
+    if results is None:
+        st.warning("⚠️ Please upload a dataset and run predictions first.")
+        st.stop()
     return results
 
 
