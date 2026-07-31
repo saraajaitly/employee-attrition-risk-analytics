@@ -2,6 +2,10 @@
 
 An end-to-end **Machine Learning web application** that predicts employee attrition risk, provides **SHAP-based explainability**, and generates personalized recommendations to support data-driven HR decision-making.
 
+## 🌐 Live Demo
+
+🚀 **Try the application here:** https://employee-attrition-risk-analytics.streamlit.app/
+
 ![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
 ![Streamlit](https://img.shields.io/badge/Streamlit-Web_App-red?logo=streamlit)
 ![Scikit-learn](https://img.shields.io/badge/Scikit--learn-Gradient_Boosting-orange?logo=scikitlearn)
@@ -17,6 +21,7 @@ Employee attrition is a major challenge for organizations, leading to increased 
 This application helps HR professionals proactively identify employees at risk of leaving by leveraging a **Gradient Boosting Machine Learning model**. Beyond prediction, it provides **SHAP explanations**, personalized retention recommendations, interactive dashboards, and downloadable reports to enable informed HR decision-making.
 
 ---
+
 
 ## ✨ Features
 
@@ -137,19 +142,43 @@ Its probability estimates also integrate effectively with **SHAP Explainability*
 
 ## 📸 Application Screenshots
 
-| Home | Prediction |
-|------|------------|
-| *Coming Soon* | *Coming Soon* |
+### 🏠 Home
 
-| Dashboard | Employee Insights |
-|-----------|-------------------|
-| *Coming Soon* | *Coming Soon* |
-
-| About |
-|-------|
-| *Coming Soon* |
+![Home](images/home.png)
 
 ---
+
+### 📈 Prediction
+
+![Prediction](images/prediction.png)
+
+---
+
+### 📊 Dashboard
+
+![Dashboard](images/dashboard.png)
+
+---
+
+### 👤 Employee Insights
+
+#### Employee Profile
+
+![Employee Profile](images/employee_profile.png)
+
+#### Risk Explanation
+
+![Risk Explanation](images/employee_explanation.png)
+
+#### Recommendations
+
+![Recommendations](images/employee_recommendations.png)
+
+---
+
+### 📘 About
+
+![About](images/about.png)
 
 ## 🛠️ Technology Stack
 
@@ -171,7 +200,7 @@ Its probability estimates also integrate effectively with **SHAP Explainability*
 ### Clone the repository
 
 ```bash
-git clone https://github.com/<your-username>/employee-attrition-risk-analytics.git
+git clone https://github.com/saraajaitly/employee-attrition-risk-analytics.git
 ```
 
 ### Navigate to the project directory
@@ -215,5 +244,6 @@ Potential improvements for future versions include:
 **Saraa Jaitly**
 
 B.Tech Artificial Intelligence & Data Science
+🔗 **GitHub:** https://github.com/saraajaitly
 
 This project was developed as an end-to-end Machine Learning portfolio project demonstrating predictive analytics, explainable AI, and interactive HR decision support using Streamlit.
